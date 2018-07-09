@@ -1,0 +1,80 @@
+.wrapper{
+    height: 100%;
+    background: #C9EDFF;
+    margin: 0;
+    display: grid;
+    /* grid-template-rows: auto; */
+    justify-items: center;
+   
+    align-items: center;
+}
+
+h1{
+    font-size: 5em;
+    text-shadow: 5px 5px #C9EDFF, 8px 8px rgba(0, 0, 0, 0.18);
+    margin: 0;
+}
+h3{
+    font-size: 1.5em;
+    margin: 0 50px;
+}
+h3::before,h3::after{
+    content: " ";
+    position: absolute;
+    border-top: 2px solid rgba(2, 147, 167, 0.3)
+}
+
+h3:nth-of-type(1)::before{
+    width: 11%;
+    margin: 3% 0 0 -11%;
+    /* height: 4px; */
+}
+h3:nth-of-type(1)::after{
+    width: 30%;
+    margin: 3% -11% 0 0;
+    
+}
+h3:nth-of-type(2){
+    float: right;
+}
+h3:nth-of-type(2)::before{
+    width: 117%;
+    margin: 7% 0 0 -118%;
+    /* height: 4px; */
+}
+h3:nth-of-type(2)::after{
+    width: 40%;
+    margin: 7% 10% 0 0;
+}
+h1,h3{
+    transform:matrix(1.30,-0.25,0.00,1.00,0,0);
+    -ms-transform:matrix(1.30,-0.25,0.00,1.00,0,0);
+    -webkit-transform:matrix(1.30,-0.25,0.00,1.00,0,0);
+    text-transform: uppercase;
+    font-family: 'Montserrat'!important;
+}
+
+.container-logo::before{
+    content: "";
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform:matrix(1.30,-0.25,0.00,1.00,0,0);
+    background: rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top:28px;left: 70px;bottom: 0;right: 0;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    /* animation: slide-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+}
+
+ @keyframes scale-up-hor-center {
+    0% {
+      transform: scaleX(0.4) matrix(1.30,-0.25,0.00,1.00,0,0);
+    }
+    100% {
+      transform: scaleX(1) matrix(1.30,-0.25,0.00,1.00,0,0);
+    }
+  }
+  

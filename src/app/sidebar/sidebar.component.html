@@ -1,13 +1,43 @@
 <nav>
     <ul>
+        <!-- <li>
+            <a routerLink="/login" [class.activated]="currentUrl=='/login'">
+              <i class="fa fa-sign-in"></i>
+            </a>
+        </li> -->
         <li>
           <a routerLink="/" [class.activated]="currentUrl=='/'">
-            <i class="material-icons">supervised_user_circle</i> 
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <!-- <li >
+            <a routerLink="/admin" [class.activated]="currentUrl=='/admin'">
+              <i class="fa fa-user-secret"></i>
+            </a>
+        </li> -->
+        <li>
+          <a routerLink="/users" [class.activated]="currentUrl=='/users'">
+            <i class="fa fa-users"></i>
+          </a>
+          </li>
+        <li>
+          <a routerLink="/posts" [class.activated]="currentUrl=='/posts'">
+            <i class="fa fa-comments"></i>
           </a>
         </li>
         <li>
-          <a routerLink="/posts" [class.activated]="currentUrl=='/posts'">
-            <i class="material-icons">message</i>
+          <a routerLink="/weather" [class.activated]="currentUrl=='/weather'">
+            <i class="fa fa-cloud"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/map" [class.activated]="currentUrl=='/map'">
+            <i class="fa fa-map-marker"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/drawlogo" [class.activated]="currentUrl=='/drawlogo'">
+            <i class="fa fa-html5"></i>
           </a>
         </li>
     </ul>

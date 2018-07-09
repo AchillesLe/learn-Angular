@@ -10,15 +10,22 @@ nav{
             a{
                 background: #fff;
                 display: block;
-                padding: 20px;
+                padding: 25px;
                 
             }
-            .activated{
-                background: #00a8ff;
+            a:hover{
+                background: #61f3f3;
+                transition: ease-out 0.5s;
             }
-        
+            .activated{
+                background: #61f3f3;
+            }
+            
             
         }
+    }
+    h1{
+        margin-left:300px;
     }
 
 }
